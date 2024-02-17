@@ -22,6 +22,50 @@ This script navigates through the Kaiser Permanente website and extracts details
 5. Run the script (`python kaiser_scrape.py`).
 6. Wait for the script to finish scraping. The results will be saved in a file named `all_data.txt`.
 
+                                           +--------------+
+                                           | Kaiser       |
+                                           | Permanente   |
+                                           | Website      |
+                                           +--------------+
+                                                 |
+                                                 |
+                                                 v
+                                          +----------+
+                                          | Selenium |
+                                          | Web      |
+                                          | Driver   |
+                                          +----------+
+                                                 |
+                                                 |
+                                                 v
+                                       +------------------+
+                                       | Chrome Web      |
+                                       | Browser          |
+                                       +------------------+
+                                                 |
+                                                 |
+                                                 v
+                                        +-------------+
+                                        | Chrome      |
+                                        | WebDriver   |
+                                        +-------------+
+                                                 |
+                                                 |
+                                                 v
+                                        +--------------+
+                                        | Python       |
+                                        | Script       |
+                                        | (kaiser_scrape.py) |
+                                        +--------------+
+                                                 |
+                                                 |
+                                                 v
+                                        +--------------+
+                                        | Output File  |
+                                        | (all_data.txt) |
+                                        +--------------+
+
+
 ## Important Notes
 
 - Ensure that you have a stable internet connection while running the script.
